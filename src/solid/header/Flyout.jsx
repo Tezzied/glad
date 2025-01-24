@@ -1,4 +1,7 @@
 import {createSignal} from "solid-js";
+import { Image } from 'astro:assets';
+import  Hydro_Logo  from  '../../assets/Hydro_Logo_White.svg'
+
 export default function Flyout(){
 // 定义是否打开状态
     const [isOpen, setIsOpen] = createSignal(false);
@@ -20,8 +23,9 @@ export default function Flyout(){
             <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
                     <span className="sr-only">Your Company</span>
+
                     <img className="h-24 w-auto sm:h-24 from-purple-600 to-indigo-600"
-                         src="../src/assets/Hydro_Logo_White.svg"
+                         src={Hydro_Logo.src}
 
                          alt=""/>
                 </a>
