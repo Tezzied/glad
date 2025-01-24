@@ -1,0 +1,10 @@
+---
+import Banner from '../../solid/Banner/dark-banner.jsx';
+---
+<div class="bg-white text-black dark:bg-gray-800 dark:text-white p-4">
+    <!--This div automatically follows the system color scheme.-->
+    <slot name="descr-header" />
+    <Banner client:load />
+    <slot name="descr-main" />
+    <slot name="descr-footer" />
+</div>

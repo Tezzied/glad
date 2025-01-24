@@ -1,0 +1,21 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import Main from "../layouts/Main.astro";
+import Blank from "../components/back/Blank.astro";
+import NavHeader from "../components/header/NavHeader.astro";
+import Content from "../components/main/Content.astro";
+import Footer from "../components/footer/Footer.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<Blank>
+		<NavHeader slot="descr-header" />
+		<Content slot="descr-main" />
+        <Footer slot="descr-footer" />
+	</Blank>
+</Layout>
